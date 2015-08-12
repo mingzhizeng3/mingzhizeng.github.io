@@ -14,7 +14,10 @@
   <body>
     <script type="text/javascript">
         function onBridgeReady(){
-            WeimiJSBridge.call('hideOptionMenu');
+          WeimiJSBridge.log("onBridgeReady");
+            WeimiJSBridge.call('hideOptionMenu', {}, function(){
+              WeimiJSBridge.log("##########");
+            });
             
         }
     
