@@ -15,8 +15,8 @@
     <script type="text/javascript">
         function onBridgeReady(){
           WeimiJSBridge.log("onBridgeReady");
-            WeimiJSBridge.call('hideOptionMenu', {}, function(){
-              WeimiJSBridge.log("##########");
+            WeimiJSBridge.call('hideOptionMenu', {}, function(a){
+              WeimiJSBridge.log("##########"+a);
             });
             
         }
