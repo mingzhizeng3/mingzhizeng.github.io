@@ -15,20 +15,20 @@
   <body>
     <script type="text/javascript">
         function onBridgeReady(){
-          WeimiJSBridge.log("onBridgeReady");
-          // WeimiJSBridge.call('hideOptionMenu', {}, function(a){
-          //     WeimiJSBridge.log("##########"+a);
+          MiguxueJSBridge.log("onBridgeReady");
+          // MiguxueJSBridge.call('hideOptionMenu', {}, function(a){
+          //     MiguxueJSBridge.log("##########"+a);
           //   });
             
-          WeimiJSBridge.call('shareTimeline', {title: 'test', desc: 'test desc', link: 'http://wwww.baidu.com', imgUrl: 'http://img2.sj.qq.com/res/sj.qq.com/official2/images/api/api1.png'});
+          MiguxueJSBridge.call('shareTimeline', {title: 'test', desc: 'test desc', link: 'http://wwww.baidu.com', imgUrl: 'http://img2.sj.qq.com/res/sj.qq.com/official2/images/api/api1.png'});
         }
     
-    if (typeof WeimiJSBridge == "undefined"){
+    if (typeof MiguxueJSBridge == "undefined"){
         if( document.addEventListener ){
-            document.addEventListener('WeimiJSBridgeReady', onBridgeReady, false);
+            document.addEventListener('MiguxueJSBridgeReady', onBridgeReady, false);
         }else if (document.attachEvent){
-            document.attachEvent('WeimiJSBridgeReady', onBridgeReady);
-            document.attachEvent('onWeimiJSBridgeReady', onBridgeReady);
+            document.attachEvent('MiguxueJSBridgeReady', onBridgeReady);
+            document.attachEvent('onMiguxueJSBridgeReady', onBridgeReady);
         }
     }else{
         onBridgeReady();
