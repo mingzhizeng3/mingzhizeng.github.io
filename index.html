@@ -16,11 +16,11 @@
     <script type="text/javascript">
         function onBridgeReady(){
           WeimiJSBridge.log("onBridgeReady");
-            WeimiJSBridge.call('hideOptionMenu', {}, function(a){
-              WeimiJSBridge.log("##########"+a);
-            });
+          // WeimiJSBridge.call('hideOptionMenu', {}, function(a){
+          //     WeimiJSBridge.log("##########"+a);
+          //   });
             
-            WeimiJSBridge.call('shareTimeline', '{title: \'title\', link: \'link\', imgUrl: \'http::\'}');
+          WeimiJSBridge.call('shareTimeline', {title: 'title', link: 'link', imgUrl: 'http::'});
         }
     
     if (typeof WeimiJSBridge == "undefined"){
