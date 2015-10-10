@@ -20,9 +20,7 @@
               WeimiJSBridge.log("##########"+a);
             });
             
-            WeimiJSBridge.on('menu:share:timeline', function(a){
-              WeimiJSBridge.log("########## timeline"+a);
-            });
+            WeimiJSBridge.call('shareTimeline', '{title: \'title\', link: \'link\', imgUrl: \'http::\'}');
         }
     
     if (typeof WeimiJSBridge == "undefined"){
