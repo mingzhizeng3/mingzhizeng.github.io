@@ -16,11 +16,11 @@
     <script type="text/javascript">
         function onBridgeReady(){
           MiguxueJSBridge.log("onBridgeReady");
-          MiguxueJSBridge.call('hideOptionMenu', {}, function(a){
-              MiguxueJSBridge.log("##########"+a);
-            });
+          // MiguxueJSBridge.call('hideOptionMenu', {}, function(a){
+          //     MiguxueJSBridge.log("##########"+a);
+          //   });
             
-          MiguxueJSBridge.call('shareTimeline', {title: 'test', desc: 'test desc', link: 'http://wwww.baidu.com', imgUrl: 'http://img2.sj.qq.com/res/sj.qq.com/official2/images/api/api1.png'});
+          MiguxueJSBridge.call('wxshare', {title: 'test', desc: 'test desc', link: 'http://wwww.baidu.com', imgUrl: 'http://img2.sj.qq.com/res/sj.qq.com/official2/images/api/api1.png'});
         }
     
     if (typeof MiguxueJSBridge == "undefined"){
