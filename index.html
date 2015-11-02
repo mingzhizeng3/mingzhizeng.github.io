@@ -35,10 +35,10 @@
     // }
 
       function onBridgeReady(){
-          WeixinJSBridge.log("onBridgeReady");
-          WeixinJSBridge.call('hideOptionMenu', {}, function(a){
-              WeixinJSBridge.log("##########"+a);
-            });
+          // WeixinJSBridge.log("onBridgeReady");
+          // WeixinJSBridge.call('hideOptionMenu', {}, function(a){
+          //     WeixinJSBridge.log("##########"+a);
+          //   });
             
           WeixinJSBridge.call('sendAppMessage', {title: 'test', desc: 'test desc', link: 'http://wwww.baidu.com', imgUrl: 'http://img2.sj.qq.com/res/sj.qq.com/official2/images/api/api1.png'});
         }
